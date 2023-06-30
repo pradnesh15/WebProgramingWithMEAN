@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Information Display</title>
+    <style>
+        #info {
+            display: none;
+            padding: 10px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        
+    </style>
+    
+</head>
+<body>
+   <center>
+    <img src="Audi.jpg" alt="Image" onclick="displayInfo()" style = 'width :500px; height: 500px;' />
+    </center>
+    <div id="info">
+        <p >AUDI is a German automobile manufacturer that designs,
+             engineers, produces, markets and distributes luxury vehicles.
+             Four interlocking rings symbolised the merger of four automobile manufacturers
+              based in the German state of Saxony:
+              Audi, DKW, Horch and Wanderer became Auto Union AG.</p>
+    </div>
+    <script>
+        function displayInfo() {
+            var infoDiv = document.getElementById("info");
+            infoDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>
